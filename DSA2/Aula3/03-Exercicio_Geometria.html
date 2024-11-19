@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculos de areas</h1>
+   <button onclick="calculo()">Calcular</button>
+
+    <script>
+        function calculo(){
+        const PI = 3.14159
+        let forma= prompt("escolha : 1 para (triangulo),2 para(retagulo),3 para(quadrado) 4(trapezio),5(ciruclo)");
+        let resultado;
+        
+        switch(forma){
+            case "1":
+                
+                n1 = prompt("insira a base")
+                n2= prompt("insira a altura")
+                resultado =(n1+n2)/2
+                alert(resultado)
+                break;
+                case "2":
+                n1 = prompt("insira a base")
+                n2= prompt("insira a altura")
+                resultado =(n1+n2)
+                alert(resultado)
+                break;
+                case "3":
+                n1 = prompt("insira a base")
+                resultado=n1*n1
+                alert(resultado)
+                break;
+                case "4":
+                n1 = prompt("insira a base maior")
+                n3 = prompt("insira a base menor")
+                n2= prompt("insira a altura")
+                resultado =((n1+n3)*n2)/2
+                alert(resultado)
+                break
+                case "5":
+                n1 = prompt("insira o raio")
+                resultado =(n1*n1)*PI
+                alert(resultado)
+                break
+        }
+    }
+    </script>
+</body>
+</html>

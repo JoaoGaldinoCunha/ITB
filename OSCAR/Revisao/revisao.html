@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+     function verificar(){
+        
+        
+       
+
+
+        var n6= document.getElementById("che1").value;
+        var n7= document.getElementById("che1").value;
+        var n8= document.getElementById("che1").value;
+        var n9= document.getElementById("che1").value;
+        
+
+        var n1= document.getElementById("nome").value;
+        if(n1==""){
+        window.alert("Digite o nome para a reserva");
+        document.getElementById("nome").focus()
+        document.getElementById("nome").style.backgroundColor="#FF0000"
+        
+        }
+        else{
+            document.getElementById("txtPratPrin").style.backgroundColor="#0000FF"
+        }
+
+        var n2= document.getElementById("sobrenome").value;
+
+        if(n2==""){
+        window.alert("Digite o Sobrenome");
+        document.getElementById("sobrenome").focus()
+        document.getElementById("sobrenome").style.backgroundColor="#FF0000"
+        
+        }
+        else{
+            document.getElementById("sobrenome").style.backgroundColor="#0000FF"
+        }
+        
+        var n3= document.getElementById("email").value;
+        if(n3==""){
+        window.alert("Digite o email");
+        document.getElementById("email").focus()
+        document.getElementById("email").style.backgroundColor="#FF0000"
+        return false
+        }
+        else{
+         !n3.incluses("@")
+        window.alert("Digite o email");
+        document.getElementById("email").focus()
+        document.getElementById("email").style.backgroun
+
+        var n4= document.getElementById("Telefone").value;
+
+         if(n4==""){
+        window.alert("Digite o Telefone");
+        document.getElementById("Telefone").focus()
+        document.getElementById("Telefone").style.backgroundColor="#FF0000"
+        }
+        else{
+            document.getElementById("Telefone").style.backgroundColor="#0000FF"
+        }
+    
+
+        var n5= document.getElementById("convidados").value;
+        if(n5==""){
+        window.alert("Digite o Telefone");
+        document.getElementById("convidados").focus()
+        document.getElementById("convidados").style.backgroundColor="#FF0000"
+        }
+        else if(isNaN(n5)){
+           window.alert("DIGITE APENAS NÚMEROS PARA RESERVA");
+           document.getElementById("convidados").value="";
+           document.getElementById("convidados").focus();
+           document.getElementById("convidados").style.backgroundColor="#0000ff"
+           
+        }
+        else if(10>n5){
+           window.alert("DIGITE APENAS NÚMEROS PARA RESERVA");
+           document.getElementById("convidados").value="";
+           document.getElementById("convidados").focus();
+           document.getElementById("convidados").style.backgroundColor="#0000ff"
+           
+        }
+        else{
+            document.getElementById("convidados").style.backgroundColor="#0000FF"
+        }
+     }
+    }
+
+    </script>
+</head>
+<body>
+    <h1>ORÇAMENTO</h1>
+    <form action="" method="" onsubmit="return verificar()">
+        <label for="">NOME:</label>
+    <input  type="text" name="" id="nome">
+    <label for="">SOBRENOME:</label>
+    <input type="text" name="" id="sobrenome">
+    <br >
+    <label for="">EMAIL:</label>
+    <input type="text" name="" id="email">
+    <label for="">TELEFONE:</label>
+    <input type="text" name="" id="Telefone">
+    <label for="">NUM CONVIDADOS:</label>
+    <input type="text" name="" id="convidados">
+    <br>
+    <br>
+    <label for="" id="l5">Tipo de evento:</label>
+
+    <input type="radio" name="casamento" id="che1" value="cs">
+    <label for="">Casamento</label>
+    <input type="radio" name="debutante" id="che2" value="db">
+    <label for="">debutante</label>
+    <input type="radio" name="bodas" id="che3" value="bd">
+    <label for="">Bodas</label>
+    <input type="radio" name="bar/bat mitzvah" id="che4" value="br">
+    <label for="">Bar/Bat mitzvah</label>
+    <br >
+    <h3>Me interesso pelo espaço</h3>
+     <select name="" id="">
+        <option value="">Selecione</option>
+        <option value="">Gardem-Evento no Campo</option>
+        <option value="">Louge-Evento na Cidade(Rústico chique)</option>
+        <option value="">Village-Evento na Cidade (Moderno)</option>
+     </select>
+     <br >
+     <textarea name="" id="area" cols="90" rows="5">Mensagem</textarea>
+     <br >
+    <input type="submit" value="Enviar" id="submit">
+    </form>
+</body>
+</html>

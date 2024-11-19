@@ -1,0 +1,21 @@
+<h1>Exercicios</h1>
+<input type="text" id="textonome" placeholder="Informe a idade">
+<input type="button" value="Calculando idade" onclick="testdoNo()">
+<script>
+function testdoNo(){
+     var nome = document.getElementById("textonome").value;
+if(nome==""){
+alert("Escreva seu NOME!!")
+document.getElementById("textonome").focus;
+return false;
+}
+else if(nome>=18){
+    document.write("MAIOR DE IDADE");
+}
+else{
+    document.write("Menor de idade")
+}
+
+
+}
+</script>

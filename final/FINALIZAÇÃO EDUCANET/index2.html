@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATE-ME</title>
+
+    <link rel="stylesheet" href="estilo2.css">
+    <script>
+ function Clicar(){
+    var nome=document.getElementById("nome").value;
+    var email= document.getElementById("email").value;
+    if(nome==""){
+        window.alert("Insira o  nome")
+        return false
+    }
+  
+  
+     else if(email==""){
+        window.alert("Insira o E-mail")
+        document.getElementById("email").focus;
+  
+        return false
+    }
+    else if(!email.includes("@")){
+        window.alert("Insira o @")
+        return false
+    }
+    else{
+        return true
+    }
+
+   }
+ 
+ 
+
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <img src="d6277cab-4376-4be0-b814-0b4783af375e.jpeg" id="loginho">
+        <h2>CONTATO EDUCANET</h2>
+    </header>
+    <main>
+    <h1 id="font">Entrem em contato conosco !</h1>
+    <p id="texto">Caso desejem entrar em contato conosco direto e facilmente,
+    mande diretamente aqui um email, que logo será respondido,
+    qualquer duvida sobre nosso trabalho, ou qualquer tipo
+    de contato que queiram realizar, mandem logo abaixo esperamos
+    que tiveram uma boa expêriencia no site e tenham gostado.
+    </p>
+
+    
+    <form class="contact-form" action="https://formsubmit.co/educanetitb@gmail.com"   method="POST" onsubmit=" return Clicar()">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Informe seu Nome">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" placeholder="informe seu E-mail">
+
+        <label id="messagem" for="message"placeholder="Deixe sua mensagem">Mensagem</label><br><br>
+        <textarea name="" id="area" cols="90" rows="10"></textarea><br>
+        <button type="submit" id="botao">Enviar</button>
+
+        <input type="hidden" name="_subject" value="Novo contato!">
+        <input type="text" name="_honey" style="display:none">
+    </form>
+
+    <a href="index.html">Voltar</a>
+     </main>   
+</body>
+</html>

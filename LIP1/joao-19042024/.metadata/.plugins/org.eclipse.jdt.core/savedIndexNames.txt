@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+Z:\LIP1\joao-19042024\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1022677411.index
+672693027.index
+3774590692.index
+3681144415.index
+1438787863.index
+4073198012.index
+2253707204.index

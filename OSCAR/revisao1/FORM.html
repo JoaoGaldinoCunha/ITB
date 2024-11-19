@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function Verificar() {
+            var nome = document.getElementById("Nome").value
+
+            if (nome == "") {
+                window.alert("Porfavor insira o nome")
+                document.getElementById("Nome").style.backgroundColor = "#FF0000"
+                return false
+            }
+
+            var email = document.getElementById("Email").value
+            if (email == "") {
+                window.alert("Por favor insira o email")
+                document.getElementById("Email").style.backgroundColor = "#FF0000"
+                return false
+            }
+            else if (!email.includes("@")) {
+                window.alert('Insira o @')
+                document.getElementById("Email").style.backgroundColor = "#FF0000"
+                return false
+            }
+            var telefone = document.getElementById("Telefone").value
+            if (telefone == "") {
+                window.alert("Insira o numero de telefone")
+                document.getElementById("Telefone").style.backgroundColor = "#FF0000"
+                return false
+            }
+            else if (isNaN(telefone)) {
+                window.alert("Numero de telefone invalido")
+                document.getElementById("Telefone").style.backgroundColor = "#FF0000"
+                document.getElementById("Telefone").value="";
+                return false
+            }
+            var convidado = document.getElementById("convidados").value
+            if (convidado == "") {
+                window.alert("Insira o numero de convidados")
+                document.getElementById("convidados").style.backgroundColor = "#FF0000"
+                return false
+            }
+            else if (isNaN(convidado)) {
+                window.alert("Insira Números! invalido")
+                document.getElementById("convidados").style.backgroundColor = "#FF0000"
+                return false
+            }
+            else if (10 > convidado) {
+                window.alert("Numero menor que 10! Invalido")
+                document.getElementById("convidados").style.backgroundColor = "#FF0000"
+                return false
+            }
+
+             var select=document.getElementById("select").value
+             if(select==1){
+                window.alert("selecione uma opção")
+                return false
+             }
+        }
+        function ticar1() {
+            var rad1 = document.getElementById("rad1").value
+            var rad2 = document.getElementById("rad2").value
+            var rad3 = document.getElementById("rad3").value
+            var rad4 = document.getElementById("rad4").value
+            var rad5= document.getElementById("rad5").value
+            if (document.getElementById("rad1").checked) {
+                document.getElementById("rad2").checked =false;
+                document.getElementById("rad3").checked =false;
+                document.getElementById("rad4").checked = false;
+                document.getElementById("rad5").checked = false;
+            }
+            else{
+                document.getElementById("rad1").checked=false
+            }
+            
+        }
+        function ticar2() {
+            var rad1 = document.getElementById("rad1").value
+            var rad2 = document.getElementById("rad2").value
+            var rad3 = document.getElementById("rad3").value
+            var rad4 = document.getElementById("rad4").value
+            var rad5= document.getElementById("rad5").value
+            if (document.getElementById("rad2").checked) {
+                document.getElementById("rad1").checked =false;
+                document.getElementById("rad3").checked =false;
+                document.getElementById("rad4").checked = false;
+                document.getElementById("rad5").checked = false;
+            }
+            else{
+                document.getElementById("rad2").checked=false
+            }
+            
+        }
+
+        function ticar3() {
+            var rad1 = document.getElementById("rad1").value
+            var rad2 = document.getElementById("rad2").value
+            var rad3 = document.getElementById("rad3").value
+            var rad4 = document.getElementById("rad4").value
+            var rad5= document.getElementById("rad5").value
+            if (document.getElementById("rad3").checked) {
+                document.getElementById("rad2").checked =false;
+                document.getElementById("rad1").checked =false;
+                document.getElementById("rad4").checked = false;
+                document.getElementById("rad5").checked = false;
+            }
+            else{
+                document.getElementById("rad3").checked=false
+            }
+            
+        }
+
+        function ticar4() {
+            var rad1 = document.getElementById("rad1").value
+            var rad2 = document.getElementById("rad2").value
+            var rad3 = document.getElementById("rad3").value
+            var rad4 = document.getElementById("rad4").value
+            var rad5= document.getElementById("rad5").value
+            if (document.getElementById("rad4").checked) {
+                document.getElementById("rad2").checked =false;
+                document.getElementById("rad3").checked =false;
+                document.getElementById("rad1").checked = false;
+                document.getElementById("rad5").checked = false;
+            }
+            else{
+                document.getElementById("rad4").checked=false
+            }
+        }
+            function ticar5() {
+            var rad1 = document.getElementById("rad1").value
+            var rad2 = document.getElementById("rad2").value
+            var rad3 = document.getElementById("rad3").value
+            var rad4 = document.getElementById("rad4").value
+            var rad5= document.getElementById("rad5").value
+            if (document.getElementById("rad5").checked) {
+                document.getElementById("rad2").checked =false;
+                document.getElementById("rad3").checked =false;
+                document.getElementById("rad4").checked = false;
+                document.getElementById("rad1").checked = false;
+            }
+            else{
+                document.getElementById("rad5").checked=false
+            }
+            
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>FAÇA SEU  ORÇAMENTO</h1>
+    <br>
+    <form onsubmit="return Verificar()">
+        <label id="l1">NOME</label>
+        <input  type="text" name="" id="Nome" autocomplete="off">
+        <label id="l2">EMAIL</label>
+        <input type="text" name="" id="Email" autocomplete="off">
+        <br>
+        <br>
+        <label id="l3">TELEFONE</label>
+        <input type="text" name="" id="Telefone" autocomplete="off">
+        <label id="l4">NÚMERO DE CONVIDADOS</label>
+        <input type="text" name="" id="convidados" autocomplete="off">
+        <br>
+        <br>
+        <br>
+        <label id="te">Tipo de Evento</label>
+        
+        <input type="radio" id="rad1" name="" checked="checked" onclick="ticar1()" value="rad1">Casamento</input>
+        <input type="radio" id="rad2" name="" onclick="ticar2()" value="rad2">Debutante</input>
+        <input type="radio" id="rad3" name=""  onclick="ticar3()"value="rad3">Bodas</input>
+        <input type="radio" id="rad4" name="" onclick="ticar4()" value="rad4">Bar Mizvtah</input>
+        <input type="radio" id="rad5" name="" onclick="ticar5()" value="rad5">Aniversário</input>
+        <br>
+        <br>
+        <label  id="el">Escolha o Local</label>
+        <br>
+        <select name="" id="select">
+            <option value="1">Selecione</option>
+            <option value="">Gardem-Evento no Campo</option>
+            <option value="">Louge-Evento na Cidade(Rústico chique)</option>
+            <option value="">Village-Evento na Cidade (Moderno)</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label id="do">Deixa uma observação:</label>
+        <br>
+        <textarea name="" id="" cols="90" rows="5">Mensagen</textarea>
+        <br>
+        <button type="submit">Eviar orçamento</button>
+    </form>
+</body>
+
+</html>

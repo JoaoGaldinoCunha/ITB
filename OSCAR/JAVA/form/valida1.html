@@ -1,0 +1,21 @@
+<html>
+    <head>  <title>MacBife I</title>
+    <script type="text/javascript">
+        function testar(){
+            var n1 = document.getElementById("txtPratPrin").value;
+            if(n1==""){
+                window.alert("digite o número de pessoas para a reserva");
+            }
+            else{
+                window.alert("preenchimento OK");
+            }
+        }
+    </script>
+    </head>
+    <body>
+    <h1>Sistema de Reserva</h1>
+    <p>Entre o Número de Pessoas para a Reserva:
+    <input type="text" id="txtPratPrin" size="30" maxlength="29" /></p>
+    <input type="button" value="confirma" onclick="testar()" />
+    </body>
+</html>

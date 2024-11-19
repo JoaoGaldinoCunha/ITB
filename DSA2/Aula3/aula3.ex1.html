@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicios</h1>
+    <input type="text" id="textoValor" placeholder="Informe um Número">
+    <input type="button" value="Teste Valor" onclick="testdoNr()">
+    <script>
+    function testdoNr(){
+        var msg=""
+        var valor = document.getElementById("textoValor").value;
+        var valor2 = parseInt(valor)
+        switch(valor2){
+            case 1:
+                msg ="Um"
+                break;
+            case 2:
+                msg ="Dois"
+                break;
+        
+            case 3:  
+                msg ="Três"
+                break
+            case 4:
+                msg ="Quatro"
+                break;
+            case 5:
+                msg ="Cinco"
+                break;
+                default:ar
+            
+        }
+        if(msg==" "||msg.length<=0){
+            alert("INFORME ALGUM NÚMERO")
+            return false
+            document.getElementById("textoValor").focus
+        }
+        document.write("<h2>Número por extenso:<br/>"+msg+"</h2>");
+    }
+    </script>
+</body>
+</html>

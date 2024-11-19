@@ -1,0 +1,19 @@
+<html>
+    <head>  <title>Cadastro 1 de Aluno </title>
+    <script type="text/javascript">
+            function exibir() {
+            var tempo = new Date();
+            var hora = tempo.getHours();
+            var minuto =tempo.getMinutes();
+            var segundo=tempo.getSeconds();
+            var junta = " são " + hora + ":" + minuto + ":" + segundo+ "Horas";
+            window.alert(junta);
+        }
+        setInterval(exibir(), 30);
+    </script>
+    </head>
+    <body>
+        <h1>O Brasílio não para...</h1>
+        <input type="button" value="Horário"/>
+    </body>
+</html>

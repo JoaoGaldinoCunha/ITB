@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let msg=""
+        v1= prompt("Insira uma o primeiro numero");
+        v2 = prompt("Insira uma o segundo numero");
+        var n1 = parseInt(v1);
+        var n2= parseInt(v2);
+
+        let forma= prompt("escolha : 1 para (+),2 para(/),3 para(*) 4(-)");
+        let resultado;
+        switch(forma){
+            case "1":
+                msg="soma"
+                resultado=n1+n2;
+                
+                break;
+                case "2":
+                msg="divisao"
+                resultado=n1/n2
+                break;
+                case "3":
+                msg="mutiplicacão"
+
+                resultado=n1*n2;
+                break;
+                case "4":
+                msg="subtração"
+                resultado=n1-n2
+                break;
+               
+        }
+        document.write("O calculo da sua "+msg+"é:"+resultado);
+    </script>
+</body>
+</html>
+
+switch(calculo){
+    case 1:
+       let n1 = prompt("Informe a altura")
+       let n2=prompt("Informe a base")
+        let total=(n1*n2)/2
+        alert(total)
+
+case 2:
+       let n3 = prompt("Informe a altura")
+        let n4=prompt("Informe a base")
+        let resultado=(n3*n4)
+        alert(resultado)
+      
+case 3:
+        n1 = prompt("Informe a altura")
+        valorfinal=(n1*n1)
+        alert(valorfinal)
+case 4:
+        n1 = prompt("Informe a altura")
+        n2=prompt("Informe a base maior ")
+        n3=prompt("Informe a base menor ")
+        resultante=(n2+n3)*n1/2
+        alert(resultante)
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Autenticação</h1>
+
+    <input type="button" value="Login" class="botao" onclick="Aluno()">
+   
+    <script>
+        function login(){
+            var nome = prompt ("Autenticação")
+            if(nome ==""|| nome.length<=0){
+                alert("Informe algo,não deixe em branco")
+            }else{
+                alert("Bem vindo"+nome)
+                document.write("<h2>Login:"+nome+"<br/>Foi Aceito</br>")
+            }
+        }
+        function Aluno(){
+            var Media = prompt ("Informe sua media")
+            alert("Digite sua media:"+Media)
+            document.write("<h2>Sua media é:"+Media)
+                if(Media>=6){
+                    document.write("aluno aprovado,com uma media"+Media)
+                }
+                else{
+                    document.write("Aluno reprovado")
+                }
+            }
+        
+    </script>
+</body>
+</html>

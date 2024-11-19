@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+Z:\LIP\workpace\.metadata\.plugins\org.eclipse.jdt.core
+3169940389.index
+1718539720.index
+1865797976.index
+749927090.index

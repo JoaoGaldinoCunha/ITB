@@ -1,0 +1,35 @@
+package belval;
+
+import java.security.DomainCombiner;
+import java.util.ArrayList;
+import java.util.List;
+
+import belval.classes.Produto;
+
+public class ProdutoRepository {
+	Integer ProxId;
+
+	private List<Produto> listaProduto;
+
+	public ProdutoRepository() {
+		this.listaProduto = new ArrayList<>();
+	}
+
+	public Produto findById() {
+		for (Produto produto : listaProduto) {
+			if (produto.getId().equals(ProxId)) {
+				return produto;
+			}
+		}
+		return null;
+	}
+		public Produto removeById(I) {
+			
+		}
+	
+		
+		public static void main(String[] args) {
+			ProdutoRepository repo = new ProdutoRepository();
+		}
+}
+

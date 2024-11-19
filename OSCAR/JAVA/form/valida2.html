@@ -1,0 +1,24 @@
+<html>
+    <head> <title>MacBife II</title>
+    <script type="text/javascript">
+    function verificar(){
+        var n1 = document.getElementById("txtPratPrin").value;
+        if(n1==""){
+            window.alert("digite o número de pessoas para a reserva");
+            document.getElementById("txtPratPrin").focus();
+            document.getElementById("txtPratPrin").style.backgroundColor="#0000FF";
+        }
+        else{
+            window.alert("preenchimento OK");
+            document.getElementById("txtPratPrin").style.backgroundColor="#0000FF";
+        }
+    }
+    </script>
+    </head>
+    <body>
+        <h1>Sistemas de Reserva</h1>
+        <p>Entre o Número de Pessoas para a Reserva:
+        <input type="text" id="txtPratPrin" size="30" maxlength="29" /></p>
+        <input type="button" value="confirma" onclick="verificar()" />
+    </body>
+</html>

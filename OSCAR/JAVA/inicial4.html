@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Aluno</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body{background-color:#c0c0c0}
+            input{
+                border-style: solid;border-color:#CCCCFF;border-width:3px;
+                margin-top:3px;
+            }
+            p{font-weight: bold;height:30px;width:75%}
+        </style>
+        <script type="text/javascript">
+            function f1(){
+                window.alert("perdeu o foco");
+            }
+        </script>
+    </head>
+    <body>
+        <form id="CadAluno" action="destino.html" method="get">
+            <p>Digite Seu Nome:
+                <input type="text" id="txtNomAluno" size="42" maxlength="40" onblur="f1()"/>
+            </p>
+            <p>Digite Seu RM:
+                <input type="text" id="txtRM" size="8" maxlength="6" />
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+Z:\LIP1\.metadata\.plugins\org.eclipse.jdt.core
+1718539720.index
+1865797976.index
+985413812.index

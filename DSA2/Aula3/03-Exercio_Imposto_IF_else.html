@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposto</title>
+</head>
+<body>
+    <h1>Imposto de renda</h1>
+    <input type="text" name="" id="textimpo">
+    <input type="button" value="calcule imposto" onclick="imposto()">
+    <script>
+       function imposto(){
+        let valorbase =document.getElementById("textimpo").value
+        let resultado
+        let descontando
+        if(valorbase<=999){
+            resultado=(valorbase/100)*2
+            descontando=valorbase-resultado
+        }
+        else if(valorbase>=1000 || valor<=2999){
+            (valorbase/100)*2.5
+
+            descontando=valorbase-resultado
+        }
+        else if(valorbase>=3000 || valor<=6999){
+            (valorbase/100)*2.8
+            descontando=valorbase-resultado
+        }
+        else{
+            (valorbase/100)*3
+            descontando=valorbase-resultado
+        }
+        document.write(resultado)
+        document.write("o valor descontado é :",descontando)
+       }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;produto-mortadela.json&apos; to &apos;produto-mortadela.json&apos;&#x0D;&#x0A;- Original project: &apos;crudrest2&apos;&#x0D;&#x0A;- Destination element: &apos;produto-mortadela.json&apos;&#x0D;&#x0A;- Original element: &apos;produto-mortadela.json&apos;" description="Copy file" element1="produto-mortadela.json" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1716601871886" target="/crudrest2/produto-mortadela.json" units="0" version="1.0"/>
+</session>

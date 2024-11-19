@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="botao" onclick="IMC()">
+    <script>
+        function IMC(){
+         Altura =prompt("Informe sua Altura:")
+         Peso =prompt("Informe seu Peso:")
+         resultado =Peso/(Altura*Altura);
+         
+
+        if(resultado<18.5){
+            alert("Magreza")
+        }
+        else if(resultado>18.5 && resultado<24.9){
+            alert("Normal")
+        }
+        else if(resultado>25 && resultado<29.9){
+            alert("sobrepeso")
+        }
+        else if(resultado>30 && resultado<34.9){
+            alert("Obsidade grau 1")
+        }
+        else if(resultado>38.5 && resultado<39.9){
+            alert("Obsesidade grau 2")
+        }
+        else{
+            alert("Obsesidade grau 3")
+        }
+    }
+    </script>
+</body>
+</html>

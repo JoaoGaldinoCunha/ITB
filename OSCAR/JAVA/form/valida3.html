@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>  <title>MAcBife III</title>
+    <script type="text/javascript">
+        function verificar(){
+            var n1 = document.getElementById("txtPratPrin").value;
+            if(n1==""){
+                window.alert("digite o número de pessoas para a reserva");
+                document.getElementById("txtPratPrin").focus();
+                document.getElementById("txtPratPrin").style.backgroundColor="#FF0000";
+            }
+            else if(isNaN(n1)){
+                window.alert("digite APENAS números para a reserva");
+                document.getElementById("txtPratPrin").value="";
+                document.getElementById("txtPratPrin").focus();
+                document.getElementById("txtPratPrin").style.backgroundColor="FF0000";
+            }
+            else{
+                window.alert("número OK");
+                document.getElementById("txtPratPrin").style.backgroundColor="#0000FF";
+    
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <form id="CadReserva">
+            <fieldset>
+                <legend>Sistema de Reserva</legend>
+                    <label>Entre o Número de Pessoas para a Reserva:</label>
+                <input type="text" id="txtPratPrin" size="30" maxlength="29" />
+                <input type="button" value="confirma" onclick="verificar()" />
+            </fieldset>
+        </form>
+    </body>
+</html>

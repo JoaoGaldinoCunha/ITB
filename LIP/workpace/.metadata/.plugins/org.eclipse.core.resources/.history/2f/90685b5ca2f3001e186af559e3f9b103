@@ -1,0 +1,5 @@
+package belval.classes;
+
+public class Produto {
+		private Integer ProxId;
+}

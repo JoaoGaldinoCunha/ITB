@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+Z:\LIP1\applip-joao-20240503\workspaceprof\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3324248985.index

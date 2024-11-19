@@ -1,0 +1,12 @@
+package controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class suadacao {
+	@GetMapping 
+		public String Saudacao() {
+			return "Olá tudo bem";
+		}
+}

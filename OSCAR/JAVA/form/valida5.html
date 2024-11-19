@@ -1,0 +1,68 @@
+<html>
+    <head>  <title>MacBife V</title>
+    <script type="text/javascript">
+    function verificar(){
+        var n1 = document.getElementById("txtPratPrin").value;
+        var n2 = document.getElementById("txtResp").value;
+        if(n1==""){
+            window.alert("digite o número de pessoas para a reserva");
+            document.getElementById("txtPratPrin").focus();
+            document.getElementById("txtPratPrin").style.backgroundColor="#FF0000";
+            return;
+        }
+        else if(isNaN(n1)){
+            window.alert("digite APENAS números para a reserva");
+            document.getElementById("txtPratPrin").value="";
+            document.getElementById("txtPratPrin").focus();
+            document.getElementById("txtPratPrin").style.backgroundColor="FF0000";
+            return;
+        }
+        else{
+            window.alert("número OK");
+            document.getElementById("txtPratPrin").style.backgroundColor="#0000FF";
+        }
+
+        if(n2==""){
+            window.alert("digite o nome do responsável pela reserva");
+            document.getElementById("txtResp").focus();
+            document.getElementById("txtResp").style.backgroundColor="#FF0000";
+        }
+    }
+    function ticar1(){
+        if(document.getElementById("radtip1").checked){
+            document.getElementById("radtip2").checked = false
+        }
+        else{
+            document.getElementById("radtip1").checked = false
+        }
+    }
+
+    function ticar2(){
+        if(document.getElementById("radtip2").checked){
+            document.getElementById("radtip1").checked = false
+        }
+        else{
+            document.getElementById("radtip2").checked = false
+        }
+    }
+
+    </script>
+    </head>
+
+    <body>
+        <form id="CadReserva">
+            <fieldset>
+                <legend>Sistemas de Reserva</legend>
+                <label>Entre o Número de Pessoas para a Reserva:</label>
+                <input type="text" id="txtPratPrin" size="30" maxlength="29" />
+                <label>Nome do Responsável pela reserva</label>
+                <input type="text" id="txtResp" size="30" maxlength="29" /> <br />
+                <input type="button" value="confirma" onclick="verificar()" />
+            </fieldset>
+
+            <label>Tipo de Jantar:</label>
+            <input type="radio" id="radtip1" value="N" checked="checked" onclick="ticar1()" /> normal
+            <input type="radio" id="radtip2" value="V" onclick="ticar2()" /> vegetariano <br />
+        </form>
+    </body>
+</html>

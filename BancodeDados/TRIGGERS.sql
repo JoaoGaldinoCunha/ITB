@@ -1,0 +1,18 @@
+
+CREATE TABLE cadfun_historico (
+	CODFUN	INT	NOT NULL PRIMARY KEY,
+	NOME	VARCHAR(40) NOT NULL,
+	DEPTO	CHAR(2),
+	FUNCAO	CHAR(20),
+	SALARIO DECIMAL(10, 2)
+)
+CREATE TRIGGER tr_cadfun_after_delete 
+ON cadfun
+FOR DELETE AS
+BEGIN
+    INSERT INTO cadfun_historico 
+	SELECT * FROM deleted
+;
+END
+$$
+DELIMITER ;

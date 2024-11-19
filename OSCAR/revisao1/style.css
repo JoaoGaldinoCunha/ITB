@@ -1,0 +1,63 @@
+h1{
+    color: #daA520;
+text-align: center;
+}
+input{
+    box-shadow: none;
+  
+}
+#l1{
+   margin-left: 30px;
+   font-size: 17px;
+}
+#l2{
+margin-left: 220px;
+font-size: 17px;
+}
+#l3{
+    margin-left: 14px;
+    font-size: 16px;
+}
+
+#l4{
+    margin-left: 60px;
+    font-size: 17px;
+}
+#te{
+    font-size: 20px;
+}
+#el{
+    font-size: 20px;
+}
+#do{
+    font-size: 20px;
+}
+#Nome{
+    width: 310px;
+    height: 25px;
+    
+    border-color: #daA520;
+}
+#Email{
+    width: 450px;
+    height: 25px;
+    border-color: #daA520;
+
+}
+    #Telefone{
+        width: 300px;
+        height: 25px;
+        border-color: #daA520;
+    }
+    #convidados{
+        width: 450px;
+        height: 25px;
+        border-color: #daA520;
+    }
+    button{
+        background-color: black;
+        color: white;
+        height: 40px;
+        box-shadow: none;
+        border-style: none;
+    }

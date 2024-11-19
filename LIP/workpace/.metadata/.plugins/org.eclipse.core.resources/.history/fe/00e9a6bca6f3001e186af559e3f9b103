@@ -1,0 +1,20 @@
+package belval;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import belval.classes.Produto;
+
+public class ProdutoRepository {
+	private List<Produto>listaProduto;
+	
+	public ProdutoRepository() {
+		this.listaProduto= new ArrayList<>();
+	}
+	public   ProdutofindById(){
+		for(Produto produto:listaProduto) {
+		if(produto.getId().equals(ProxId)) {
+			return produto;
+		}
+
+}

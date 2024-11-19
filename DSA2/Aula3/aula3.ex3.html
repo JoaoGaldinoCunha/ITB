@@ -1,0 +1,41 @@
+<h1>Exercicios</h1>
+<input type="text" id="textoValor" placeholder="Informe um número">
+<input type="button" value="Teste Valor" onclick="testdoNr()">
+<script>
+function testdoNr(){
+    var msg=""
+    var valor = document.getElementById("textoValor").value;
+    var valor2 = parseInt(valor)
+    switch(valor2){
+        case 1:
+            msg ="Segunda-feira"
+            break;
+        case 2:
+            msg ="Terça-Feira"
+            break;
+    
+        case 3:  
+            msg ="Quarta-Feira"
+            break
+        case 4:
+            msg ="Quinta-Feira"
+            break;
+        case 5:
+            msg ="Sexta-Feira"
+            break;
+        case 6:
+            msg ="Sábado"
+            break;
+        case 7:
+            msg ="Domingo"
+            break;
+            
+            default:
+                msg>7 || msg<0
+                alert("Não existe dia para esse número")
+                return false
+        }
+        document.write("<h2>Dia da semana:<br/>"+msg+"</h2>");
+    }
+
+</script>

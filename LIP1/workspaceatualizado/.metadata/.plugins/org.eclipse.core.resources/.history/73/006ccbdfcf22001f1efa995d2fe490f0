@@ -1,0 +1,5 @@
+package com.belval.crudrest;
+
+public class WebConfig {
+
+

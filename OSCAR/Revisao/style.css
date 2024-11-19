@@ -1,0 +1,68 @@
+body{
+    text-decoration: none;
+    padding: 20px;
+}
+h1{
+ text-align: center;
+ color: rgb(194, 194, 149);
+}
+#nome{
+  width: 450px;
+  height: 28px;
+  font-size: 12px;
+  border-color: rgb(194, 194, 149);
+  box-shadow: none;
+}
+#sobrenome{
+    width: 600px;
+    height: 28px;
+    border-color: rgb(194, 194, 149);
+    font-size: 12px;
+    box-shadow: none;
+}
+#email{
+    margin-top: 40px;
+    font-size: 12px;
+    width: 450px;
+    height: 28px;
+    
+    border-color: rgb(194, 194, 149);
+    box-shadow: none;
+}
+#Telefone{
+    margin-top: 40px;
+    font-size: 12px;
+    width: 450px;
+    height: 28px;
+    border-color: rgb(194, 194, 149);
+    box-shadow: none;
+}
+#convidados{
+    margin-top: 40px;
+    font-size: 12px;
+    width: 150px;
+    height: 28px;
+    border-color: rgb(194, 194, 149);
+    box-shadow: none;
+}
+#area{
+    border-color: rgb(194, 194, 149);
+    box-shadow: none;
+    font-size: 12px;
+}
+#submit{
+ background-color: black;
+ color: white;
+ width: 120px;
+ height: 40px;
+ box-shadow: none;
+}
+#l5{
+    margin-top: 15px;
+}
+h3{
+    margin-top: 10px;
+}
+textarea{
+    margin-top: 70px;
+}
